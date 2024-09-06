@@ -16,7 +16,7 @@ const links = [
   },
   {
     path: "heroImages",
-    name: "Contact",
+    name: "All Images",
   },
   {
     path: "news",

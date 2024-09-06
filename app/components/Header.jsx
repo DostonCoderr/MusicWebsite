@@ -32,7 +32,7 @@ const Header = () => {
       <div className="container mx-auto flex flex-col xl:flex-row items-center justify-between">
         {/* Logo */}
         <Link
-          href={"#"}
+          href={"/"}
           className="relative flex w-[226px] h-[37.64px] transition-all mb-4 xl:mb-0"
         >
           <Image
