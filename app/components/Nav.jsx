@@ -7,8 +7,8 @@ const links = [
     name: 'Home',
   },
   {
-    path: 'tours',
-    name: 'Events',
+    path: 'about',
+    name: 'About Singer',
   },
   {
     path: 'albums',

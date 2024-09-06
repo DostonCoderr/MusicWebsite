@@ -561,46 +561,57 @@
       "description": "1. Serenade in D Major - 9/10\n2. Midnight Lullaby - 8/10\n3. Whispers of the Wind - "
     }
   ],
-  "images": [
+  "categories": [
     {
       "id": 1,
-      "url": "/assets/images/image-1.jpg"
+      "title": "Miyagi",
+      "images": [
+        { "id": 1, "url": "/assets/miyagiImages/miyagi1.jfif" },
+        { "id": 2, "url":"/assets/miyagiImages/miyagi2.jfif" },
+        { "id": 3, "url": "/assets/miyagiImages/miyagi3.jpg" },
+        { "id": 4, "url": "/assets/miyagiImages/miyagi4.jfif" },
+        { "id": 5, "url": "/assets/miyagiImages/miyagi5.jfif" },
+        { "id": 6, "url": "/assets/miyagiImages/miyagi6.jfif" },
+        { "id": 7, "url": "/assets/miyagiImages/miyagi7.jpg" },
+        { "id": 8, "url": "/assets/miyagiImages/miyagi8.jfif" },
+        { "id": 9, "url": "/assets/miyagiImages/miyagi9.jpg" },
+        { "id": 10, "url": "/assets/miyagiImages/miyagi10.jpg" },
+        { "id": 10, "url": "/assets/miyagiImages/miyagi11.jfif" },
+        { "id": 10, "url": "/assets/miyagiImages/miyagi12.jpg" }
+      ]
     },
     {
       "id": 2,
-      "url": "/assets/images/image-2.jpg"
+      "title": "Eminem",
+      "images": [
+        { "id": 1, "url": "/assets/eminemImages/eminem1.jfif" },
+        { "id": 2, "url": "/assets/eminemImages/eminem2.jfif" },
+        { "id": 3, "url": "/assets/eminemImages/eminem3.jpg" },
+        { "id": 4, "url": "/assets/eminemImages/eminem4.jpg" },
+        { "id": 5, "url": "/assets/eminemImages/eminem5.jpg" },
+        { "id": 6, "url": "/assets/eminemImages/eminem6.jpg" },
+        { "id": 7, "url": "/assets/eminemImages/eminem7.jpg" },
+        { "id": 8, "url": "/assets/eminemImages/eminem8.jpg" },
+        { "id": 9, "url": "/assets/eminemImages/eminem9.jpg" },
+        { "id": 10, "url": "/assets/eminemImages/eminem10.jpg" },
+        { "id": 11, "url": "/assets/eminemImages/eminem11.jpg" }
+      ]
     },
     {
       "id": 3,
-      "url": "/assets/images/image-2.jpg"
+      "title": "Nasheeds",
+      "images": [
+        { "id": 1, "url": "/assets/images/nasheed1.jpg" },
+        { "id": 2, "url": "/assets/images/nasheed2.jpg" }
+      ]
     },
     {
       "id": 4,
-      "url": "/assets/images/image-2.jpg"
-    },
-    {
-      "id": 5,
-      "url": "/assets/images/image-2.jpg"
-    },
-    {
-      "id": 6,
-      "url": "/assets/images/image-2.jpg"
-    },
-    {
-      "id": 7,
-      "url": "/assets/images/image-2.jpg"
-    },
-    {
-      "id": 8,
-      "url": "/assets/images/image-2.jpg"
-    },
-    {
-      "id": 9,
-      "url": "/assets/images/image-2.jpg"
-    },
-    {
-      "id": 10,
-      "url": "/assets/images/image-2.jpg"
+      "title": "Phonks",
+      "images": [
+        { "id": 1, "url": "/assets/images/phonk1.jpg" },
+        { "id": 2, "url": "/assets/images/phonk2.jpg" }
+      ]
     }
   ]
 }
