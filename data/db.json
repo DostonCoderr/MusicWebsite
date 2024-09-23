@@ -4,7 +4,7 @@
       "id": 1,
       "date": {
         "day": "15",
-        "month": "Feb",
+        "month": "Fevral",
         "year": 2015
       },
       "location": {
@@ -18,7 +18,7 @@
       "id": 2,
       "date": {
         "day": "20",
-        "month": "March",
+        "month": "Mart",
         "year": 2016
       },
       "location": {
@@ -32,7 +32,7 @@
       "id": 3,
       "date": {
         "day": 15,
-        "month": 12,
+        "month": "Dekabr",
         "year": 2017
       },
       "location": {
@@ -60,7 +60,7 @@
       "id": 5,
       "date": {
         "day": "25",
-        "month": "Jul",
+        "month": "Iyul",
         "year": 2019
       },
       "location": {
@@ -74,7 +74,7 @@
       "id": 6,
       "date": {
         "day": "12",
-        "month": "Oct",
+        "month": "Oktyabr",
         "year": 2020
       },
       "location": {
@@ -88,7 +88,7 @@
       "id": 7,
       "date": {
         "day": "03",
-        "month": "Nov",
+        "month": "Noyabr",
         "year": 2021
       },
       "location": {
@@ -102,7 +102,7 @@
       "id": 8,
       "date": {
         "day": "06",
-        "month": "Sep",
+        "month": "Sentyabr",
         "year": 2022
       },
       "location": {
@@ -116,7 +116,7 @@
       "id": 9,
       "date": {
         "day": "26",
-        "month": "Jun",
+        "month": "Iyun",
         "year": 2023
       },
       "location": {
@@ -130,7 +130,7 @@
       "id": 10,
       "date": {
         "day": "19",
-        "month": "April",
+        "month": "Aprel",
         "year": 2022
       },
       "location": {
@@ -612,6 +612,56 @@
         { "id": 1, "url": "/assets/images/phonk1.jpg" },
         { "id": 2, "url": "/assets/images/phonk2.jpg" }
       ]
+    }
+  ],
+  "clips": [
+    {
+      "id": 1,
+      "title": "Miyagi - Captain",
+      "img": "/assets/albums/cover/Captain.jpg",
+      "youtubeUrl": "https://youtu.be/i0Oe1KQBwQg?si=5F_AK8UEklNLX3Rd"
+    },
+    {
+      "id": 2,
+      "title": "Miyagi - Bada Bum",
+      "img": "/assets/albums/cover/Badabum.jpg",
+      "youtubeUrl": "https://youtu.be/k_ijytR22_A?si=xpqXdaXMDc5WyIJ2"
+    },
+    {
+      "id": 3,
+      "title": "Miyagi - Malo",
+      "img": "/assets/albums/cover/Malo.jpg",
+      "youtubeUrl": "https://youtu.be/WgJK1-iGNco?si=5t1XBjnkwpg7c70w"
+    },
+    {
+      "id": 4,
+      "title": "Miyagi - ПАТРОН ",
+      "img": "/assets/albums/cover/ПАТРОН.jpg",
+      "youtubeUrl": "https://youtu.be/mlr_Y2YEGzk?si=dlQdpm4b-OmCIWqQ"
+    },
+    {
+      "id": 5,
+      "title": "Miyagi - Там Ревели Горы",
+      "img": "/assets/albums/cover/Там Ревели Горы.jpg",
+      "youtubeUrl": "https://youtu.be/MzI_CIYSsfQ?si=DVMzCMVSH1qp2sDn"
+    },
+    {
+      "id": 6,
+      "title": "Miyagi -  Freeman x Low",
+      "img": "/assets/albums/cover/FreemanLow.jpg",
+      "youtubeUrl": "https://youtu.be/4plFtIj2zi4?si=v4gWLKwCgVgjQjli"
+    },
+    {
+      "id": 7,
+      "title": "Miyagi - РАЙЗАП",
+      "img": "/assets/albums/cover/РАЙЗАП.jpg",
+      "youtubeUrl": "https://youtu.be/rYfJFW6zMcw?si=dIWVbY_xUXOqvEfN"
+    },
+    {
+      "id": 8,
+      "title": "Miyagi - Freeman",
+      "img": "/assets/albums/cover/Freeman.jpg",
+      "youtubeUrl": "https://youtu.be/O4_LLNBtiRQ?si=DBLsvOj94plUPKJv"
     }
   ]
 }

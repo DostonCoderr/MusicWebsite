@@ -27,7 +27,9 @@ const AlbumSlider = () => {
         speed={1000}
         spaceBetween={80}
         // allowTouchMove={false}
-        thumbs={{ swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null, }}
+        thumbs={{
+          swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null,
+        }}
         modules={[FreeMode, Navigation, Thumbs, EffectCoverflow]}
         coverflowEffect={{
           rotate: 50,
@@ -93,59 +95,60 @@ const AlbumSlider = () => {
       </Swiper>
 
       <Swiper
-      onSwiper={setThumbsSwiper}
-      modules={[FreeMode, Navigation, Thumbs]} 
-      breakpoints={{
-        320: {
-          slidesPerView: 2,
-          spaceBetween: 10,
-        },
-        425: {
-          slidesPerView: 2,
-          spaceBetween: 30,
-        },
-        768: {
-          slidesPerView: 3,
-          spaceBetween: 30,
-        },
-        1024: {
-          slidesPerView: 4,
-          spaceBetween: 30,
-        },
-        1310 : {
-          slidesPerView: 5,
-          spaceBetween: 30,
-        }
-      }}
-      spaceBetween={20}
-      slidesPerView={5}
-      freeMode={true}
-      watchSlidesProgress={true}
-      autoplay={{
-        delay: 1000,
-        disableOnInteraction: false,
-      }}
-      className="thumb-slider"
+        onSwiper={setThumbsSwiper}
+        modules={[FreeMode, Navigation, Thumbs]}
+        breakpoints={{
+          320: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+          425: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+          },
+          1310: {
+            slidesPerView: 5,
+            spaceBetween: 30,
+          },
+        }}
+        spaceBetween={20}
+        slidesPerView={5}
+        freeMode={true}
+        watchSlidesProgress={true}
+        autoplay={{
+          delay: 1000,
+          disableOnInteraction: false,
+        }}
+        className="thumb-slider"
       >
-        {data.map((thumb, index)=> {
+        {data.map((thumb, index) => {
           return (
-            <SwiperSlide key={index} className="relative group overflow-hidden border-2 border-transparent w-[254px] rounded-[10px]">
+            <SwiperSlide
+              key={index}
+              className="relative group overflow-hidden border-2 border-transparent w-[254px] rounded-[10px]"
+            >
               <div className="relative w-[195px] h-[195px] sm:w-[360px] sm:h-[360px] md:w-[240px] md:max-h-[240px] cursor-pointer">
                 <Image
-                src={thumb.img}
-                fill
-                priority
-                alt=""
-                className="object-contain group-hover:scale-105 transition-all duration-300"
+                  src={thumb.img}
+                  fill
+                  priority
+                  alt=""
+                  className="object-contain group-hover:scale-105 transition-all duration-300"
                 />
               </div>
               <div>
-                <div className="flex p-4">
-                {thumb.description}
-                </div>
+                <div className="flex p-4">{thumb.description}</div>
               </div>
             </SwiperSlide>
-          )
+          );
         })}
       </Swiper>
     </>

@@ -14,20 +14,24 @@ const Newsletter = () => {
         <div className="flex flex-col h-full items-center justify-center">
           <SectionHeader
             pretitle="Get in touch"
-            title="Sign Up to our newsletter"
+            title="Yengliladan Xabardor Boling"
           />
           <motion.div
-          variants={fadeIn("up", 0.4)}
-          initial="hidden"
-          whileInView={"show"}
-          viewport={{ once: false, amount: 0.3 }}
-          className="relative flex items-center w-full max-w-xl">
+            variants={fadeIn("up", 0.4)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.3 }}
+            className="relative flex items-center w-full max-w-xl"
+          >
             <input
               type="text"
               placeholder="Email address"
               className="w-full h-[64px] outline-none rounded-full bg-black backdrop-blur-[15px] px-8"
             />
-            <button type="submit" className="bg-white/60 absolute hover:text-black right-2 h-[46px] rounded-full text-[15px] hover:bg-white transition-all px-6">
+            <button
+              type="submit"
+              className="bg-white/60 absolute hover:text-black right-2 h-[46px] rounded-full text-[15px] hover:bg-white transition-all px-6"
+            >
               Subscribe
             </button>
           </motion.div>

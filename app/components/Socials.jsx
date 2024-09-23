@@ -1,23 +1,28 @@
 import Link from "next/link";
-import { RiYoutubeFill, RiInstagramFill, RiSpotifyFill, RiSoundcloudFill } from "react-icons/ri";
+import {
+  RiYoutubeFill,
+  RiInstagramFill,
+  RiSpotifyFill,
+  RiSoundcloudFill,
+} from "react-icons/ri";
 
 const socials = [
   {
-    path: "#",
-    icon: <RiYoutubeFill/>,
+    path: "https://www.youtube.com/@HajimeRecords/videos",
+    icon: <RiYoutubeFill />,
   },
   {
-    path: "#",
-    icon: <RiInstagramFill/>,
+    path: "https://www.instagram.com/miyagi_officialll/",
+    icon: <RiInstagramFill />,
   },
   {
-    path: "#",
-    icon: <RiSpotifyFill/>,
+    path: "https://open.spotify.com/artist/1kmpkcYbuaZ8tnFejLzkj2?si=6xxiG0q2RhmtHs6Ji3HmRA",
+    icon: <RiSpotifyFill />,
   },
   {
-    path: "#",
-    icon: <RiSoundcloudFill/>,
-  }
+    path: "https://soundcloud.com/miyagi_black",
+    icon: <RiSoundcloudFill />,
+  },
 ];
 
 const Socials = ({ containerStyles, iconStyles }) => {
