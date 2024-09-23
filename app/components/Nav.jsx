@@ -34,7 +34,7 @@ const Nav = ({ containerStyles, linkStyles }) => {
         return (
           <Link
             href={link.path}
-            className={`${linkStyles} cursor-pointer border-b-2 border-transparent`}
+            className={`${linkStyles} cursor-pointer border-b-2 border-transparent transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-black duration-300`}
             key={index}
             smooth={!isDesctop ? false : true}
             spy

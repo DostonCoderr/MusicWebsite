@@ -21,12 +21,15 @@ const Header = () => {
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
+      window.scrollTo({
+        behavior: "smooth"
+      })
     };
   }, []);
   return (
     <header
       className={`fixed z-50 w-full transition-all ${
-        active ? "bg-[#000000] py-6" : "bg-transparent py-8"
+        active ? " py-6" : "bg-transparent py-8"
       }`}
     >
       <div className="container mx-auto flex flex-col xl:flex-row items-center justify-between">
@@ -39,6 +42,7 @@ const Header = () => {
             src={"/assets/header/miyagi3.png"}
             fill
             className="object-contain"
+            alt=""
           />
         </Link>
         <Nav containerStyles="hidden  xl:flex items-center gap-x-8" />
