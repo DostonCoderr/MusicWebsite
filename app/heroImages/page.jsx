@@ -3,11 +3,12 @@ import { useState } from "react";
 import useSWR from "swr";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Pagination } from "swiper";
-import { FreeMode, Navigation, Thumbs } from "swiper/modules";
+import { FreeMode, Navigation, Thumbs, Pagination } from "swiper/modules";
 
 import "swiper/css";
-import "swiper/css/effect-coverflow";
+import "swiper/css/free-mode";
+import "swiper/css/navigation";
+import "swiper/css/thumbs";
 import "swiper/css/pagination";
 import Image from "next/image";
 
@@ -60,6 +61,7 @@ const HeroImages = () => {
                 delay: 1000,
                 disableOnInteraction: false,
               }}
+              pagination={{ clickable: true }} // Enable pagination
               className="thumb-slider"
             >
               {category.images.map((image) => (
