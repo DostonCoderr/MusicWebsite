@@ -1,7 +1,7 @@
 {
-    "functions": {
-      "api/json-server.js": {
-        "runtime": "nodejs16.x" 
-      }
+  "functions": {
+    "api/**/*.js": {
+      "runtime": "vercel-node@16.x" 
     }
   }
+}
