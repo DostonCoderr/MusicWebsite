@@ -16,7 +16,7 @@ SwiperCore.use([Navigation, Pagination]);
 const fetcher = (url) => fetch(url).then((res) => res.json());
 const HeroImages = () => {
   // Fetch categories data
-  const { data, error } = useSWR("http://localhost:4000/categories", fetcher);
+  const { data, error } = useSWR(`${process.env.NEXT_PUBLIC_API_URL}/categories`, fetcher);
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
   if (error) return <div>Failed to load categories</div>;

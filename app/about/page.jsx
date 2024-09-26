@@ -10,7 +10,7 @@ import { fadeIn } from "../../variants";
 const fetcher = (url) => fetch(url).then((res) => res.json());
 
 const AboutSinger = () => {
-  const { data, error } = useSWR("http://localhost:4000/clips", fetcher);
+  const { data, error } = useSWR(`${process.env.NEXT_PUBLIC_API_URL}/clips`, fetcher);
 
   if (error) return <div>Failed to fetch data</div>;
   if (!data) return <div>Loading...</div>;
