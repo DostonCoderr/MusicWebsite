@@ -12,9 +12,8 @@ import "swiper/css/thumbs";
 import "swiper/css/pagination";
 import Image from "next/image";
 
-SwiperCore.use([Navigation, Pagination]);
-
 const fetcher = (url) => fetch(url).then((res) => res.json());
+
 const HeroImages = () => {
   // Fetch categories data
   const { data, error } = useSWR(`${process.env.NEXT_PUBLIC_API_URL}/categories`, fetcher);
@@ -22,6 +21,7 @@ const HeroImages = () => {
 
   if (error) return <div>Failed to load categories</div>;
   if (!data) return <div>Loading...</div>;
+
   return (
     <section className="section py-5" id="images">
       <div className="container mx-auto">
@@ -30,7 +30,7 @@ const HeroImages = () => {
             <h2 className="h2 text-center mb-8">{category.title}</h2>
             <Swiper
               onSwiper={setThumbsSwiper}
-              modules={[FreeMode, Navigation, Thumbs]}
+              modules={[FreeMode, Navigation, Thumbs, Pagination]} // Add Pagination here if you want to use it
               breakpoints={{
                 320: {
                   slidesPerView: 2,
@@ -66,7 +66,7 @@ const HeroImages = () => {
             >
               {category.images.map((image) => (
                 <SwiperSlide
-                  key={category}
+                  key={image.id} // Use image.id for a unique key
                   className="relative group overflow-hidden border-2 border-transparent w-[254px] rounded-[10px]"
                 >
                   <div className="relative w-[195px] h-[195px] sm:w-[360px] sm:h-[360px] md:w-[240px] md:max-h-[240px] cursor-pointer">
